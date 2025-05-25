@@ -12,11 +12,10 @@ export default function ContactPage() {
           method="POST"
           className="space-y-6"
         >
-          {/* ✅ Hidden input to redirect after form submission */}
           <input
             type="hidden"
             name="_redirect"
-            value="http://localhost:3000/thank-you"
+            value="https://my-legal-site-aa8i.vercel.app/thank-you"
           />
 
           <div>
