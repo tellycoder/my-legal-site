@@ -8,7 +8,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Site title/logo */}
         <Link href="/" className="text-lg font-bold">
-          George Brown Legal
+          George Brown Professional Corporation
         </Link>
 
         {/* Navigation links */}
