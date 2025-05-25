@@ -12,16 +12,26 @@ export default function Navbar() {
         </Link>
 
         {/* Navigation links */}
-        <div className="space-x-6">
+        <div className="flex items-center space-x-6">
           <Link href="/" className="text-sm text-gray-700 hover:text-black">
             Home
           </Link>
+
+          <Link
+            href="/landlord-services"
+            className="text-sm text-gray-700 hover:text-black"
+          >
+            Landlord Services
+          </Link>
+
           <Link href="/services" className="text-sm text-gray-700 hover:text-black">
             Services
           </Link>
+
           <Link href="/contact" className="text-sm text-gray-700 hover:text-black">
             Contact
           </Link>
+
           <Link href="/zoom" className="text-sm text-gray-700 hover:text-black">
             Zoom
           </Link>
