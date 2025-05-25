@@ -8,16 +8,27 @@ export default function ContactPage() {
       <main className="flex-grow max-w-xl mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold mb-6 text-center">Contact Us</h1>
         <form
-          action="https://formspree.io/f/mqaqvebg"
-          method="POST"
+          onSubmit={async (e) => {
+            e.preventDefault();
+            const form = e.target as HTMLFormElement;
+            const formData = new FormData(form);
+
+            const response = await fetch("https://formspree.io/f/mqaqvebg", {
+              method: "POST",
+              body: formData,
+              headers: {
+                Accept: "application/json",
+              },
+            });
+
+            if (response.ok) {
+              window.location.href = "https://my-legal-site-aa8i.vercel.app/thank-you";
+            } else {
+              alert("Something went wrong. Please try again.");
+            }
+          }}
           className="space-y-6"
         >
-          <input
-            type="hidden"
-            name="_redirect"
-            value="https://my-legal-site-aa8i.vercel.app/thank-you"
-          />
-
           <div>
             <label className="block mb-1 text-sm font-medium text-gray-700">Name</label>
             <input
