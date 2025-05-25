@@ -7,6 +7,8 @@ export default function ContactPage() {
       <Navbar />
       <main className="flex-grow max-w-xl mx-auto px-4 py-12">
         <h1 className="text-3xl font-bold mb-6 text-center">Contact Us</h1>
+
+        {/* ✅ This uses JavaScript fetch and does NOT have action= or method= */}
         <form
           onSubmit={async (e) => {
             e.preventDefault();
@@ -30,9 +32,7 @@ export default function ContactPage() {
           className="space-y-6"
         >
           <div>
-            <label className="block mb-1 text-sm font-medium text-gray-700">
-              Name
-            </label>
+            <label className="block mb-1 text-sm font-medium text-gray-700">Name</label>
             <input
               name="name"
               type="text"
@@ -43,9 +43,7 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <label className="block mb-1 text-sm font-medium text-gray-700">
-              Email
-            </label>
+            <label className="block mb-1 text-sm font-medium text-gray-700">Email</label>
             <input
               name="email"
               type="email"
@@ -56,9 +54,7 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <label className="block mb-1 text-sm font-medium text-gray-700">
-              Message
-            </label>
+            <label className="block mb-1 text-sm font-medium text-gray-700">Message</label>
             <textarea
               name="message"
               rows={5}
