@@ -1,4 +1,3 @@
-// force redeploy
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -23,7 +22,7 @@ export default function ContactPage() {
             });
 
             if (response.ok) {
-              window.location.href = "https://my-legal-site-aa8i.vercel.app/thank-you";
+              window.location.href = "https://my-legal-site.vercel.app/thank-you";
             } else {
               alert("Something went wrong. Please try again.");
             }
@@ -31,7 +30,9 @@ export default function ContactPage() {
           className="space-y-6"
         >
           <div>
-            <label className="block mb-1 text-sm font-medium text-gray-700">Name</label>
+            <label className="block mb-1 text-sm font-medium text-gray-700">
+              Name
+            </label>
             <input
               name="name"
               type="text"
@@ -42,7 +43,9 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <label className="block mb-1 text-sm font-medium text-gray-700">Email</label>
+            <label className="block mb-1 text-sm font-medium text-gray-700">
+              Email
+            </label>
             <input
               name="email"
               type="email"
@@ -53,7 +56,9 @@ export default function ContactPage() {
           </div>
 
           <div>
-            <label className="block mb-1 text-sm font-medium text-gray-700">Message</label>
+            <label className="block mb-1 text-sm font-medium text-gray-700">
+              Message
+            </label>
             <textarea
               name="message"
               rows={5}
