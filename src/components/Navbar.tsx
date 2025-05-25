@@ -1,3 +1,5 @@
+// src/components/Navbar.tsx
+
 import Link from "next/link";
 
 export default function Navbar() {
@@ -19,6 +21,9 @@ export default function Navbar() {
           </Link>
           <Link href="/contact" className="text-sm text-gray-700 hover:text-black">
             Contact
+          </Link>
+          <Link href="/zoom" className="text-sm text-gray-700 hover:text-black">
+            Zoom
           </Link>
         </div>
       </div>
